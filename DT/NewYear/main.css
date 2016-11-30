@@ -23,14 +23,138 @@
     transform: none;
   }
 }
-
+@keyframes bigstar {
+  0% {
+    width: 10px;
+    height: 10px;
+  }
+  9% {
+    width: 8px;
+    height: 8px;
+  }
+  18% {
+    width: 6px;
+    height: 6px;
+  }
+  27% {
+    width: 4px;
+    height: 4px;
+  }
+  36% {
+    width: 2px;
+    height: 2px;
+  }
+  45% {
+    width: 0px;
+    height: 0px;
+  }
+  54% {
+    width: 2px;
+    height: 2px;
+  }
+  63% {
+    width: 4px;
+    height: 4px;
+  }
+  72% {
+    width: 6px;
+    height: 6px;
+  }
+  81% {
+    width: 8px;
+    height: 8px;
+  }
+  100% {
+    width: 10px;
+    height: 10px;
+  }
+}
+@keyframes mildstar {
+  0% {
+    width: 6px;
+    height: 6px;
+  }
+  9% {
+    width: 5px;
+    height: 5px;
+  }
+  18% {
+    width: 4px;
+    height: 4px;
+  }
+  27% {
+    width: 3px;
+    height: 3px;
+  }
+  36% {
+    width: 2px;
+    height: 2px;
+  }
+  45% {
+    width: 1px;
+    height: 1px;
+  }
+  54% {
+    width: 2px;
+    height: 2px;
+  }
+  63% {
+    width: 3px;
+    height: 3px;
+  }
+  72% {
+    width: 4px;
+    height: 4px;
+  }
+  81% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 6px;
+    height: 6px;
+  }
+}
+@keyframes smallstar {
+  0% {
+    width: 3px;
+    height: 3px;
+  }
+  14.3% {
+    width: 2px;
+    height: 2px;
+  }
+  28.6% {
+    width: 1px;
+    height: 1px;
+  }
+  42.9% {
+    width: 0px;
+    height: 0px;
+  }
+  57.2% {
+    width: 1px;
+    height: 1px;
+  }
+  71.5% {
+    width: 2px;
+    height: 2px;
+  }
+  85.8% {
+    width: 3px;
+    height: 3px;
+  }
+  100% {
+    width: 4px;
+    height: 4px;
+  }
+}
 .container {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-
 .back-sky {
 	position: absolute;
 	left: -50%;
@@ -44,42 +168,194 @@
 	animation-direction: alternate;
 	background: linear-gradient(10deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
 }
-
-/* We start with setting the variables: how many stars there should be and an empty variable declaration for later */
-$star-number: 100;
-$current-stars: ;
-
-/* Now we just style this one 1px by 1px div to be a round dot fixed in top left corner */
-.stars {
+.star {
   position: fixed;
-  top: 0;
-  left: 0;
   display: block;
-  width: 1px;
-  height: 1px;
   border-radius: 50%;
   background: white;
-
-  /* We count down from the number of stars that we chose to have: */
-  @while $star-number > 0 {
-  
-    /* And with each iteration we concatenate string with another box shadow declaration.
-    We set random position for the box shadow and random size (from 1 to 2 px).
-    The last thing to add is a comma, but we need to use and unquote function to add that */
-  
-    $current-stars: $current-stars
-                    + (random(100) +vw) (random(50) +vh) 0 (random(2) +px) rgba(255,255,255,.7)
-                    + unquote(", ");
-  
-    /* The last box shadow needs to be added without a comma. 
-     After we have the whole string ready, we add it to the box-shadow as a value */
-    @if $star-number == 1 {
-      $current-stars: $current-stars
-                      + (random(100) +vw) (random(50) +vh) 0 0 rgba(255,255,255,.9);
-      box-shadow: $current-stars;
-    }
-    
-    /* Remember to count down. Otherwise you will end up with an infinite loop */
-    $star-number: $star-number - 1;
-  }
+}
+.big-star {
+  animation: bigstar 9s infinite;
+}
+.midle-star {
+  animation: mildstar 6s infinite;
+}
+.small-star {
+  animation: smallstar 3s infinite;
+}
+.star01 {
+  top: 50px;
+  left: 50px;
+}
+.star02 {
+  top: 60px;
+  left: 120px;
+}
+.star03 {
+  top: 90px;
+  left: 230px;
+}
+.star04 {
+  top: 5px;
+  left: 370px;
+}
+.star05 {
+  top: 40px;
+  left: 510px;
+}
+.star06 {
+  top: 80px;
+  left: 650px;
+}
+.star07 {
+  top: 190px;
+  left: 790px;
+}
+.star08 {
+  top: 150px;
+  left: 990px;
+}
+.star09 {
+  top: 50px;
+  left: 1130px;
+}
+.star10 {
+  top: 60px;
+  left: 1270px;
+}
+.star11 {
+  top: 90px;
+  left: 1410px;
+}
+.star12 {
+  top: 5px;
+  left: 1550px;
+}
+.star13 {
+  top: 40px;
+  left: 1650px;
+}
+.star14 {
+  top: 80px;
+  left: 1790px;
+}
+.star15 {
+  top: 170px;
+  left: 1880px;
+}
+.star16 {
+  top: 40px;
+  left: 80px;
+}
+.star17 {
+  top: 50px;
+  left: 200px;
+}
+.star18 {
+  top: 80px;
+  left: 350px;
+}
+.star19 {
+  top: 70px;
+  left: 470px;
+}
+.star20 {
+  top: 50px;
+  left: 590px;
+}
+.star21 {
+  top: 50px;
+  left: 960px;
+}
+.star22 {
+  top: 80px;
+  left: 1100px;
+}
+.star23 {
+  top: 40px;
+  left: 1250px;
+}
+.star24 {
+  top: 70px;
+  left: 1380px;
+}
+.star25 {
+  top: 90px;
+  left: 1480px;
+}
+.star26 {
+  top: 60px;
+  left: 1580px;
+}
+.star27 {
+  top: 80px;
+  left: 1690px;
+}
+.star28 {
+  top: 50px;
+  left: 1810px;
+}
+.star29 {
+  top: 90px;
+  left: 880px;
+}
+.star30 {
+  top: 60px;
+  left: 750px;
+}
+.star31 {
+  top: 110px;
+  left: 65px;
+}
+.star32 {
+  top: 150px;
+  left: 900px;
+}
+.star33 {
+  top: 120px;
+  left: 1000px;
+}
+.star34 {
+  top: 110px;
+  left: 1800px;
+}
+.star35 {
+  top: 150px;
+  left: 232px;
+}
+.star36 {
+  top: 160px;
+  left: 399px;
+}
+.star37 {
+  top: 120px;
+  left: 566px;
+}
+.star38 {
+  top: 150px;
+  left: 733px;
+}
+.star39 {
+  top: 180px;
+  left: 1160px;
+}
+.star40 {
+  top: 120px;
+  left: 1320px;
+}
+.star41 {
+  top: 200px;
+  left: 1480px;
+}
+.star42 {
+  top: 120px;
+  left: 1620px;
+}
+.star43 {
+  top: 160px;
+  left: 1780px;
+}
+.star44 {
+  top: 120px;
+  left: 1870px;
 }

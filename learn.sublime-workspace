@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
 				"arr",
 				"arrSimpleDiv"
 			],
@@ -344,19 +348,19 @@
 	"buffers":
 	[
 		{
-			"file": "DT/tmp.js",
+			"file": "DT/NewYear/index.html",
 			"settings":
 			{
-				"buffer_size": 9964,
+				"buffer_size": 2240,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "DT/index.html",
+			"file": "DT/NewYear/main.css",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 4194,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -424,10 +428,14 @@
 	"expanded_folders":
 	[
 		"/C/OpenServer/domains/LearningRep",
-		"/C/OpenServer/domains/LearningRep/DT"
+		"/C/OpenServer/domains/LearningRep/DT",
+		"/C/OpenServer/domains/LearningRep/DT/NewYear"
 	],
 	"file_history":
 	[
+		"/C/OpenServer/domains/LearningRep/tmp.html",
+		"/C/OpenServer/domains/LearningRep/DT/tmp.js",
+		"/C/OpenServer/domains/LearningRep/DT/index.html",
 		"/C/OpenServer/domains/StickerBoard/database/migrations/base/2016_11_24_084124_create_stickers_table.php",
 		"/C/OpenServer/domains/StickerBoard/public/.htaccess",
 		"/C/OpenServer/domains/StickerBoard/.env",
@@ -552,10 +560,7 @@
 		"/C/OpenServer/domains/miniBlog/bootstrap/app/views/news/newsItemView.php",
 		"/C/OpenServer/domains/miniBlog/bootstrap/.htaccess",
 		"/E/_D/_yaDisk/_html/ServiceTruck/project/serviсes.html",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/reports.html",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/transport.html",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/css/starter-template.css",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/servies.html"
+		"/E/_D/_yaDisk/_html/ServiceTruck/project/reports.html"
 	],
 	"find":
 	{
@@ -576,6 +581,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"star38",
 			"<div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"male\"> Мужской\n          </label>\n        </div>\n        <div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"female\"> Женский\n          </label>\n        </div>\n        <div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"other\"> Другое\n          </label>\n        </div>\n      </div>",
 			"gglproject",
 			" \n",
@@ -620,64 +626,65 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "DT/tmp.js",
+					"file": "DT/NewYear/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9964,
+						"buffer_size": 2240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9964,
-								9964
+								1629,
+								1629
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6060.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "DT/index.html",
+					"file": "DT/NewYear/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 4194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								2387,
+								2387
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
