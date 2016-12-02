@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"res2"
+			],
+			[
+				"t",
+				"toUpperCase"
+			],
+			[
+				"s",
+				"str"
+			],
+			[
+				"ar",
+				"arr"
+			],
+			[
+				"str",
+				"substr"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
 				"di",
 				"display"
 			],
@@ -140,10 +172,6 @@
 				"table-cell"
 			],
 			[
-				"t",
-				"td\tTag"
-			],
-			[
 				"Cli",
 				"ClientX"
 			],
@@ -230,10 +258,6 @@
 			[
 				"fo",
 				"footer\tTag"
-			],
-			[
-				"re",
-				"result"
 			],
 			[
 				"uri",
@@ -361,6 +385,15 @@
 			"settings":
 			{
 				"buffer_size": 4194,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "DT/tmp.js",
+			"settings":
+			{
+				"buffer_size": 18643,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -581,6 +614,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			");\n",
 			"star38",
 			"<div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"male\"> Мужской\n          </label>\n        </div>\n        <div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"female\"> Женский\n          </label>\n        </div>\n        <div class=\"col-xs-1\">\n          <label class=\"radio-inline\">\n            <input type=\"radio\" name=\"genderRadios\" value=\"other\"> Другое\n          </label>\n        </div>\n      </div>",
 			"gglproject",
@@ -626,7 +660,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -654,7 +688,7 @@
 						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -682,6 +716,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "DT/tmp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18641,
+								18431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 11766.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
