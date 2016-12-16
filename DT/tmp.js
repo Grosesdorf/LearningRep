@@ -628,3 +628,199 @@
 
 // console.log(arr);
 
+// // Простые функции 
+// // 1. Сделайте функцию, которая возвращает квадрат числа. Число передается параметром. 
+
+// function squar(x){ 
+// return x * x; 
+// } 
+
+// console.log(squar(5)); 
+
+// // 2. Сделайте функцию, которая возвращает сумму двух чисел. 
+
+// function sum(a, b){ 
+// return a + b; 
+// } 
+
+// console.log(sum(5, 10)); 
+
+// // 3. Сделайте функцию, которая отнимает от первого числа второе и делит на третье. 
+
+// function calc(a, b, c){ 
+// if (c === 0){ 
+// return false; 
+// } 
+// return (a - b) / c; 
+// } 
+
+// console.log(calc(10, 6, 0)); 
+
+// // 4. Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке. 
+
+// function days(a){ 
+// var arrDays = [ "Понедельник", 
+// "Вторник", 
+// "Среда", 
+// "Четверг", 
+// "Пятница", 
+// "Суббота", 
+// "Воскресенье"]; 
+// if (a < 1 || a > 7){ 
+// return false; 
+// } 
+// return arrDays[a - 1]; 
+// } 
+
+// console.log(days(1)); 
+
+// // Отработка 
+// // 5. Дан массив с числами. Запишите в новый массив только те числа, которые больше нуля и меньше 10-ти. 
+// // Создайте для этого вспомогательную функцию isNumberInRange(число), которая параметром будет принимать число и возвращать true, 
+// // если число попадает в заданный интервал и false - если не попадает. 
+
+// var arr = [-2, -1, 0, 3, 5, 6, 7, 10, 25, 99]; 
+// var newArr = []; 
+
+// function isNumberInRange(x){ 
+// if (x > 0 && x < 10){ 
+// return true; 
+// } 
+// else{ 
+// return false; 
+// } 
+// } 
+
+// function isNumberOfArrInRange(arr){ 
+// var newArr = []; 
+// for (var i = 0; i < arr.length; i++){ 
+
+// if (isNumberInRange(arr[i])){ 
+// newArr.push(arr[i]); 
+// } 
+// } 
+// return newArr; 
+// } 
+
+// console.log(isNumberOfArrInRange(arr));
+
+// // 6. Найдите все года от 0 до 2016, сумма цифр которых равна 13. Для этого создайте вспомогательную функцию getNumbersSum, 
+// // которая параметром будет принимать число и возвращать сумму цифр этого числа.
+
+// function getNumbersSum(x){
+// 	var s = 0
+// 	while (x > 0)
+// 	{
+// 	 s += x % 10
+// 	 x = Math.floor(x/10)
+// 	}
+// 	return s;
+// }
+
+// var arr = [];
+// for (var i = 0; i <= 2016; i++){
+// 	if (getNumbersSum(i) === 13){
+// 		arr.push(i);
+// 	}
+// }
+
+// console.log(arr);
+
+// // 7. Дан массив с числами. Создайте из него новый массив, где останутся лежать только четные из этих чисел. 
+// // Создайте для этого вспомогательную функцию isEven() (even - это четный), которая параметром будет принимать число и возвращать true, 
+// // если число четное и false - если не четное.
+
+// function isEven(x){
+// 	if (x % 2 === 0){
+// 		return true;
+// 	}
+
+// 	return false;
+// }
+
+// var arrNumbers = [-2, -3, 0, 2, 4, 5, 45, 98, 103, -1056];
+// var arrOfEvenNum = [];
+// for (var i = 0; i < arrNumbers.length; i++){
+// 	if (isEven(arrNumbers[i]) && arrNumbers[i] !== 0){
+// 		arrOfEvenNum.push(arrNumbers[i]);
+// 	}
+// }
+
+// console.log(arrOfEvenNum);
+
+// // 8. Дан массив с числами. Найдите сумму четных чисел из этого массива. Для этого создайте функцию arraySum, которая параметром принимает массив, 
+// // а возвращает его сумму. Также создайте функцию getEven, которая параметром принимает массив чисел, а возвращает массив четных чисел. 
+// // Эта функция должна использовать функцию isEven из предыдущей задачи.
+
+// var arrNumbers = [-2, -3, 0, 2, 4, 5, 45, 98, 103, -1056];
+
+// function isEven(x){
+// 	if (x % 2 === 0){
+// 		return true;
+// 	}
+// 	return false;
+// }
+
+// function getEven(arr){
+// 	var arrOfEvenNum = [];
+// 	for (var i = 0; i < arr.length; i++){
+// 		if (isEven(arr[i]) && arr[i] !== 0){
+// 			arrOfEvenNum.push(arr[i]);
+// 		}
+// 	}
+// 	return arrOfEvenNum;
+// }
+
+// function arraySum(arr){
+// 	var sum = 0;
+// 	for (var i = 0; i < arr.length; i++){
+// 		sum += arr[i];
+// 	}
+// 	return sum;
+// }
+
+// console.log(getEven(arrNumbers));
+// console.log(arraySum(arrNumbers));
+
+
+// // 9. Сделайте функцию, которая определяет простое число или нет. С помощью этой функции найдите простые числа в промежутке от 1 до 1000 
+// // и запишите их в массив. Затем создайте функцию arraySum, которая параметром принимает массив, а возвращает его сумму, и с ее помощью найдите 
+// // сумму простых чисел в промежутке от 1 до 1000.
+
+// var arrOfPrimeNum = [];
+
+// function isPrimeNum(num){
+// 	if (num === 1){
+// 		return true;
+// 	}
+// 	else{
+// 		var flag = 0;
+// 		for (var i = 2; i < num; i++){
+// 			if ((num % i) == 0){
+// 				flag ++;
+// 			}
+// 		}
+// 		if (flag == 0){
+// 			return true;
+// 		}else{
+// 			return false;
+// 		}
+// 	}
+// }
+
+// for (var i = 1; i <= 1000; i++){
+// 	if(isPrimeNum(i)){
+// 		arrOfPrimeNum.push(i);
+// 	}
+// }
+
+// function arraySum(arr){
+// 	var sum = 0;
+// 	for (var i = 0; i < arr.length; i++){
+// 		sum += arr[i];
+// 	}
+// 	return sum;
+// }
+
+// console.log(arrOfPrimeNum);
+// console.log(arraySum(arrOfPrimeNum));

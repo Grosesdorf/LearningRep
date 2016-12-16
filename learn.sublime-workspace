@@ -372,15 +372,6 @@
 	"buffers":
 	[
 		{
-			"file": "DT/NewYear/index.html",
-			"settings":
-			{
-				"buffer_size": 2240,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "DT/NewYear/main.css",
 			"settings":
 			{
@@ -466,6 +457,7 @@
 	],
 	"file_history":
 	[
+		"/C/OpenServer/domains/LearningRep/DT/NewYear/index.html",
 		"/C/OpenServer/domains/LearningRep/tmp.html",
 		"/C/OpenServer/domains/LearningRep/DT/tmp.js",
 		"/C/OpenServer/domains/LearningRep/DT/index.html",
@@ -592,8 +584,7 @@
 		"/C/OpenServer/domains/miniBlog/index.html",
 		"/C/OpenServer/domains/miniBlog/bootstrap/app/views/news/newsItemView.php",
 		"/C/OpenServer/domains/miniBlog/bootstrap/.htaccess",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/serviсes.html",
-		"/E/_D/_yaDisk/_html/ServiceTruck/project/reports.html"
+		"/E/_D/_yaDisk/_html/ServiceTruck/project/serviсes.html"
 	],
 	"find":
 	{
@@ -660,39 +651,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "DT/NewYear/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2240,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1629,
-								1629
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "DT/NewYear/main.css",
 					"semi_transient": false,
 					"settings":
@@ -722,7 +685,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "DT/tmp.js",
 					"semi_transient": false,
 					"settings":
